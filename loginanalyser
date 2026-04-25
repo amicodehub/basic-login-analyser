@@ -1,0 +1,14 @@
+real_admin="ami"
+real_pass="amika123"
+
+attempt=0
+while attempt<3:
+    adm_name=input("enter input name:")
+    adm_pass=input("enter password :")
+    if real_admin==adm_name and real_pass==adm_pass:
+        print("login succesful")
+        break
+    else:
+        attempt=attempt+1
+if attempt==3:
+    print ("login unsuccesful")
